@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Roboto", sans-serif; */
+
+
+
+
+body {
+    margin: 0;
+    background-color: hsl(235, 18%, 26%);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.container {
+
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    border-radius: 32px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.content {
+    width: 400px;
+    margin: 0;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1 {
+    padding-top: 30px;
+    color: hsl(234, 29%, 20%);
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+p {
+    margin: 0;
+    color: hsl(235, 18%, 26%);
+    line-height: 1.5;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+
+
+}
+
+ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 16px;
+    color: hsl(235, 18%, 26%);
+
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/images/icon-list.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: hsl(234, 29%, 20%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input {
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 58%);
+
+}
+
+button {
+
+    margin-top: 8px;
+    padding: 16px;
+    background: hsl(234, 29%, 20%);
+    border-radius: 8px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+
+}
+
+.photo {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 26px;
+
+
+}
+
+.photo img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+
+    .container {
+        margin: 16px;
+        flex-direction: column-reverse;
+    }
+
+
+    .content {
+        padding: 32px;
+    }
+
+    .photo {
+        margin: 26px;
+    }
+
+
+}
