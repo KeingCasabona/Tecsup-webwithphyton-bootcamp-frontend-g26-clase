@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background: aquamarine;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid blue;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h2>Tablas</h2>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Fila1-Celda1</th>
+                    <th>Fila1-Celda2</th>
+                    <th>Fila1-Celda3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fila2-Celda1</td>
+                    <td>Fila2-Celda2</td>
+                    <td>Fila3-Celda3</td>
+                </tr>
+                <tr>
+                    <td>Fila3-Celda1</td>
+                    <td>Fila3-Celda2</td>
+                    <td>Fila3-Celda3</td>
+                </tr>
+                <tr>
+                    <td>Fila4-Celda1</td>
+                    <td>Fila4-Celda2</td>
+                    <td>Fila4-Celda3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>Fila6-Celda1</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Fila7-Celda1</td>
+                    <td>Fila7-Celda4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Fila8Fila9-Celda1</td>
+                    <td rowspan="2">Fila8Fila9-Celda3</td>
+                </tr>
+                <tr>
+                    <td>Fila10-Celda1</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+
+    </main>
+
+</body>
+
+</html>
