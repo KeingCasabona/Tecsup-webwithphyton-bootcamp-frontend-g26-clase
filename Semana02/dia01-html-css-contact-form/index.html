@@ -14,46 +14,51 @@
 
     <form action="">
 
-      <label for="">
-        First Name
-        <input type="text">
-        <span>This field is required</span>
-      </label>
+      <div class="row">
+        <label>
+          First Name
+          <input type="text">
+          <span>This field is required</span>
+        </label>
 
-      <label for="">
-        Last Name
-        <input type="text">
-        <span>This field is required</span>
-      </label>
+        <label>
+          Last Name
+          <input type="text">
+          <span>This field is required</span>
+        </label>
+      </div>
 
-      <label for="">
+      <label>
         Email Address
         <input type="text">
         <span>This field is required</span>
       </label>
 
-      <label for="">
+      <label>
         Query Type
         <span>Please select a query type</span>
       </label>
 
-      <label for="">
-        <input type="radio">
-        General Enquiry
-      </label>
+      <div class="row options">
+        <label>
+          <input type="radio" name="options">
+          General Enquiry
+        </label>
 
-      <label for="">
-        <input type="radio">
-        Support Request
-      </label>
+        <label>
+          <input type="radio" name="options">
+          Support Request
+        </label>
+      </div>
 
-      <label for="">
+
+      <label>
         Message
         <textarea rows="5"></textarea>
         <span>This field is required</span>
       </label>
 
-      <label for="">
+      <label>
         <input type="checkbox">
         I consent to being contacted by the team
       </label>

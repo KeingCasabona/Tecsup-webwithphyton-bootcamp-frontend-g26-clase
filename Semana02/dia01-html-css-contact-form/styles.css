@@ -11,7 +11,7 @@ body {
 }
 
 .contact-form {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 400px;
     background: hsl(0, 0%, 100%);
     padding: 32px;
@@ -19,5 +19,77 @@ body {
 }
 
 h1 {
+    margin: 0;
     margin-bottom: 32px;
+    color: hsl(187, 24%, 22%);
+}
+
+.contact-form form {
+    /* border: 1px solid red; */
+}
+
+.contact-form label {
+    /* border: 1px solid red; */
+    display: block;
+    margin-bottom: 16px;
+}
+
+label input[type=text],
+label input[type=email],
+label textarea {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+label span {
+    display: none;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+
+}
+
+.row label {
+    flex: 1;
+}
+
+.options label {
+    border: 1px solid hsl(186, 15%, 59%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0px;
+    gap: 8px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+input[type=radio] {
+    margin: 0;
+}
+
+input[type=submit] {
+    background: hsl(169, 82%, 27%);
+
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: hsl(187, 24%, 22%);
 }
