@@ -6,29 +6,58 @@ font-family: "Open Sans", sans-serif;
 */
 
 /* GENERALS STYLES */
+html {
+    /* Elemento ROOT */
+    font-size: 14px;
+
+}
+
 body {
     background-color: hsl(217, 28%, 15%);
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    color: hsl(0, 0%, 100%);
 }
 
+a {
+    color: inherit;
+    /* hereda el color del padre  */
+    text-decoration: none;
+}
+
+/* UTIL */
 .hidden {
     display: none;
 }
 
 .wrapper {
     width: 1000px;
+    /* TODO: Adaptar el ancho de la pagina a dispositivos móviles */
 }
+
 
 /* HEADER SECTION */
 .header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 42px;
-    /* 14px * 3 = 42px*/
     margin: 0 auto;
     /* 0 auto 0 auto*/
     /* T R B L*/
+}
+
+.header__nav {
+    display: flex;
+    gap: 3rem;
+}
+
+/* .header__nav a {
+    color: red;
+} */
+
+
+/* HERO SECTION */
+.hero {
+    border: 1px solid yellow;
 }
