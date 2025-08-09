@@ -5,7 +5,14 @@ font-family: "Raleway", sans-serif;
 font-family: "Open Sans", sans-serif;
 */
 
-/* GENERALS STYLES */
+/* GENERAL STYLES */
+* {
+    /* SELECTOR UNIVERSAL */
+    /* border: 1px solid chartreuse; */
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     /* Elemento ROOT */
     font-size: 14px;
@@ -31,7 +38,7 @@ a {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 1200px;
     /* TODO: Adaptar el ancho de la pagina a dispositivos móviles */
 }
 
@@ -43,6 +50,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    margin-top: 4rem;
     /* 0 auto 0 auto*/
     /* T R B L*/
 }
@@ -59,7 +67,7 @@ a {
 
 /* HERO SECTION */
 .hero {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,12 +76,16 @@ a {
     padding-bottom: 12rem;
 }
 
+.hero__image {
+    width: 750px;
+}
+
 .hero__title {
     border: 1px solid blue;
     width: 720px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     text-align: center;
 }
 
@@ -81,15 +93,18 @@ a {
     border: 1px solid orange;
     width: 600px;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
 .hero__button {
     border: none;
     border-radius: 7rem;
-    padding: 1rem 1.5rem;
-    min-width: 220px;
+    padding: 1.2rem 2.5rem;
+    min-width: 280px;
     color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+
+    /* TODO: Aplicar degradado: */
     background-color: blue;
 }
