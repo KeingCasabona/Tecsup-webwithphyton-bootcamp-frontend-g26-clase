@@ -109,7 +109,8 @@ a {
     letter-spacing: 0.8px;
 
     /* TODO: Aplicar degradado: */
-    background-color: blue;
+    /* LINEAR GRADIENT: */
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 50%);
 }
 
 /* FEATURES SECTION */
