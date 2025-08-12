@@ -192,6 +192,7 @@ img {
     ;
     /* border: 1px solid red; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -199,6 +200,11 @@ img {
 }
 
 /* TODO: Usar media queries para adaptar la sección collaboration a dispositivos mobile, tablet y desktop */
+@media(min-width:1200px) {
+    .collaboration {
+        flex-direction: row;
+    }
+}
 
 .how_works {
     display: flex;
