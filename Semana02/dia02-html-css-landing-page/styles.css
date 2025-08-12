@@ -5,6 +5,14 @@ font-family: "Raleway", sans-serif;
 font-family: "Open Sans", sans-serif;
 */
 
+/* 
+TAMAÑOS DE PANTALLA DE SUGERENCIA:
+576px  -> pantallas pequeñas (celulares)
+768px  -> pantallas pequeñas (tablets y celulares)
+992px  -> pantallas medianas (Desktop)
+1200px -> pantallas grandes (Desktop, TVs) 
+*/
+
 /* GENERAL STYLES */
 * {
     /* SELECTOR UNIVERSAL */
@@ -32,14 +40,23 @@ a {
     text-decoration: none;
 }
 
+img {
+    /* TODO: RWD(RESPONSIVE WEB DESIGN) para imagenes */
+    max-width: 100%;
+    height: auto;
+}
+
 /* UTIL */
 .hidden {
     display: none;
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1440px;
     /* TODO: Adaptar el ancho de la pagina a dispositivos móviles */
+    /* width: min(ANCHO MIN - margen, ANCHO MAX); */
+    width: min(100% - 3rem, 1440px);
+
 }
 
 
@@ -81,12 +98,13 @@ a {
 }
 
 .hero__image {
-    width: 750px;
+    width: 450px;
 }
 
 .hero__title {
     /* border: 1px solid blue; */
-    width: 720px;
+    /* width: 720px; */
+    width: min(100% - 3rem, 720px);
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 2.7rem;
@@ -96,7 +114,8 @@ a {
 
 .hero__text {
     /* border: 1px solid orange; */
-    width: 650px;
+    /* width: 650px; */
+    width: min(100% - 3rem, 600px);
     font-weight: 400;
     font-size: 1.4rem;
     text-align: center;
@@ -114,12 +133,14 @@ a {
 
     /* TODO: Aplicar degradado: */
     /* LINEAR GRADIENT: */
-    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 50%);
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
 }
 
 .hero__button:hover {
-    background: linear-gradient(90deg, hsl(198, 60%, 50%) 0%, hsl(176, 68%, 64%)50%);
+    background: linear-gradient(90deg, hsl(198, 60%, 50%) 0%, hsl(176, 68%, 64%)100%);
     cursor: pointer;
+    transform: scale(1.2);
+    transform: rotate(3deg);
 }
 
 /* FEATURES SECTION */
@@ -127,9 +148,17 @@ a {
     /* border: 1px solid red; */
     background-color: hsl(218, 28%, 13%);
     display: grid;
-    grid-template-columns: 400px 400px;
+    /* MOBILE FIRST */
+    grid-template-columns: 400px;
     gap: 8rem;
     justify-content: center;
+}
+
+/* MEDIA QUERY: Se aplica a dispositivos móbiles */
+@media(min-width:1200px) {
+    .features {
+        grid-template-columns: 400px 400px;
+    }
 }
 
 .feature {
@@ -168,6 +197,8 @@ a {
     gap: 5rem;
     padding-top: 10rem;
 }
+
+/* TODO: Usar media queries para adaptar la sección collaboration a dispositivos mobile, tablet y desktop */
 
 .how_works {
     display: flex;
