@@ -234,7 +234,7 @@ img {
 /* TODO: TESTIMONIALS SECTION - Maquetar y aplicar estilos en esta section */
 
 .testimonials {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: hsl(218, 28%, 13%);
     /* MOBILE FIRST */
     display: flex;
@@ -285,4 +285,134 @@ img {
 
 .testimonial__profile h5 {
     font-weight: 400;
+}
+
+.footer {
+    position: relative;
+    background-color: hsl(216, 53%, 9%);
+    padding: 15rem 0 5rem 0;
+}
+
+/* EARLY-ACCESS SECTION */
+.footer__early_access {
+    /* border: 1px solid yellow; */
+    width: min(100% - 3rem, 51.5rem);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px #111;
+}
+
+.footer__early_access h2 {
+    font-size: 2rem;
+}
+
+.footer__early_access p {
+    text-align: center;
+}
+
+.footer__early_access form {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.footer__early_access input[type=text] {
+    border-radius: 1.5rem;
+    border: 0;
+    padding: 1rem 2rem;
+    width: min(100%, 30rem);
+}
+
+.footer__early_access input[type=submit] {
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(90deg,
+            hsl(176, 68%, 64%) 0%,
+            hsl(198, 60%, 50%) 100%);
+}
+
+.footer__early_access input[type=submit]:hover {
+    background: linear-gradient(90deg,
+            hsl(198, 60%, 50%) 0%,
+            hsl(176, 68%, 64%) 100%);
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+
+    width: min(100% - 3rem, 76rem);
+    margin: o auto;
+}
+
+@media(min-width: 1200px) {
+    .footer__wrapper {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    justify-content: center;
+
+}
+
+@media(min-width: 1200px) {
+    .footer__info {
+        flex-direction: row;
+
+
+    }
+
+}
+
+.footer__info--description {
+    width: 22rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.footer__info--contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__info--contact span {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer__info--links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__info--social {
+    display: flex;
+    gap: 1rem;
 }
