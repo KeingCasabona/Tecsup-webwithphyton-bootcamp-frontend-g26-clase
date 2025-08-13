@@ -235,4 +235,54 @@ img {
 
 .testimonials {
     border: 1px solid red;
+    background-color: hsl(218, 28%, 13%);
+    /* MOBILE FIRST */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 18rem;
+}
+
+@media(min-width: 1200px) {
+    .testimonials {
+        flex-direction: row;
+    }
+}
+
+.testimonial {
+    /* border: 1px solid blue; */
+    width: 23rem;
+    /* top right bottom left */
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.5rem solid hsla(215, 52%, 9%, 0.3);
+    background-color: hsl(219, 30%, 18%);
+}
+
+.testimonial__text {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.testimonial__profile {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.testimonial__profile img {
+    /* A partir de 50% ya es circular */
+    border-radius: 50%;
+}
+
+.testimonial__profile h4 {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial__profile h5 {
+    font-weight: 400;
 }
