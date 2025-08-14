@@ -92,6 +92,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    padding: 3rem;
 }
 
 .gallery {
@@ -123,3 +124,32 @@ header {
     opacity: .5;
     border-radius: 0;
 }
+
+/* PRODUCT SECTION */
+/* TODO: TERMINAR LA SECTION DE PRODUCT */
+
+.product {
+    border: 1px solid red;
+}
+
+.product__subtitle {}
+
+.product__title {}
+
+.product__description {}
+
+.product__price {}
+
+.product__wrapper {}
+
+.product__amount {}
+
+.product__discount {}
+
+.product__price-with-descount {}
+
+.product__form {}
+
+.product__quantity {}
+
+.product__add-to-cart {}
