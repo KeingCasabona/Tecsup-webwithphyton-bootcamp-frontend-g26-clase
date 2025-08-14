@@ -23,6 +23,7 @@
 
 
 * {
+    /* los margenes estan dentro de la medida total */
     box-sizing: border-box;
     margin: 0;
 }
@@ -85,3 +86,40 @@ header {
 }
 
 /* PRODUCT DETAIL SECTION */
+.product-detail {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gallery__cover {
+    border-radius: 1rem;
+}
+
+.gallery__slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__slider img {
+    border-radius: .5rem;
+}
+
+.gallery__slider--active {
+    border: 3px solid var(--primary-orange);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.gallery__slider--active img {
+    opacity: .5;
+    border-radius: 0;
+}
