@@ -18,7 +18,11 @@
       <input class="header__menu-checkbox" id="menu" type="checkbox">
 
       <img class="header__logo" src="./images/logo.svg" alt="">
+
       <nav class="header__link header__link--menu">
+        <label for="menu">
+          <img src="./images/icon-close.svg" width="12" alt="">
+        </label>
         <a href="">Collections</a>
         <a href="">Men</a>
         <a href="">Women</a>
@@ -34,7 +38,17 @@
 
   <main class="product-detail wrapper">
     <section class="gallery">
-      <img class="gallery__cover" src="./images/image-product-1.jpg" alt="">
+      <div class="gallery__cover--wrapper">
+        <div class="gallery__prev-button">
+          <img src="./images/icon-previous.svg" alt="">
+        </div>
+
+        <img class="gallery__cover" src="./images/image-product-1.jpg" alt="">
+
+        <div class="gallery__next-button">
+          <img src="./images/icon-next.svg" alt="">
+        </div>
+      </div>
       <div class="gallery__slider">
         <div class="gallery__slider--active">
           <img src="./images/image-product-1-thumbnail.jpg" width="90" alt="">
