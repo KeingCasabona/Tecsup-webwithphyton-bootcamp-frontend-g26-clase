@@ -102,6 +102,8 @@ header {
     padding: 1.5rem 1rem;
     font-weight: var(--font-weight-bold);
     opacity: 0;
+    z-index: 1000;
+    /* Agregado para que aparezca por encima de otros elementos */
     /* display: none; */
 }
 
@@ -175,6 +177,8 @@ input[type=checkbox]:checked~.header__link--menu {
 
 .gallery__cover--wrapper {
     position: relative;
+    z-index: 1;
+    /* Agregado para mantener un z-index bajo */
 }
 
 .gallery__prev-button,
