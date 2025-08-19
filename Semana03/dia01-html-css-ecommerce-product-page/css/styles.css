@@ -201,6 +201,13 @@ input[type=checkbox]:checked~.header__link--menu {
     right: 20px;
 }
 
+@media (min-width:1000px) {
+
+    .gallery__prev-button,
+    .gallery__next-button {
+        display: none;
+    }
+}
 
 
 .gallery__slider {
